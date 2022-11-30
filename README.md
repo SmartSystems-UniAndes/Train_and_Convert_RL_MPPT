@@ -8,7 +8,7 @@ The Train_Agent folder contains matlab and simulink files that are meant to be u
 ## Convert_Agent_To_TFlite Folder
 The Convert_Agent_To_TFlite folder contains a matlab script, called convert_script_onnx.m, that converts the agent created into a onnx file. The convert_onnx_to_tflite.ipynb file is intended to be used in google colab. This file allows the user to convert their onnx file to the tensorflow lite framework. The policy.onnx file created must be uploaded to colab to create the tflite model which can be downloaded once created.
 
-# EAGLE_PCB_FILES/Buck300W_with_diode Folder
+## EAGLE_PCB_FILES/Buck300W_with_diode Folder
 This folder contains the schematic and layout used to create the 300W Buck converter to test the models created in real experimental scenarios. It is possible to make it a synchronous  or non-synchronous if a MOSFET or a Diode is added to the low side of the converter. ADD JUST ONE OF THE TWO AT THE LOW SIDE, THE DIODE OR THE MOSFET. If you are using a raspberry pi with this circuit, DO NOT SUPPLY the SD pin of the IR2104 Driver (pin 3) with the 5V of the raspberry PI, this led to undesearable operations in our experiments.
 
 To continue deploying the model into the raspberry pi, the next step would be to follow the steps presented in the next repository:
